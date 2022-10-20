@@ -11,7 +11,7 @@ public class DocSearchTest {
     public void testHandleURL() {
         try {
             Handler handler = new Handler("./technical/");
-            URI url = new URI("http://localhost:4000/technical/");
+            URI url = new URI("http://localhost:5040/technical/");
             assertEquals("Don't know how to handle that path!", handler.handleRequest(url));
         } catch (Exception e) {
             System.out.println(e);
